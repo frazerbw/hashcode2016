@@ -48,5 +48,21 @@ public class Pathfinder {
         return bestOrder;
     }
 
+    public static void main(String[] args) {
+        Point point1 = new Point(0,0);
+        Point point2 = new Point(15,15);
+        Point point3 = new Point(5,5);
+        Point point4 = new Point(15,15);
+        Point point5 = new Point(20,20);
+
+        ArrayList<Point> points = new ArrayList<Point>();
+        points.add(point2);
+        points.add(point3);
+        points.add(point4);
+
+        Pathfinder finder = new Pathfinder(points, point1, point5);
+        System.out.println(finder.getSolution());
+    }
+
 
 }
