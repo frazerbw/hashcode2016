@@ -51,8 +51,10 @@ public class Drone {
         return true;
     }
 
-    public void deliver(Point ) {
-        if (!this.location)
+    public boolean deliver(Point deliveryAddress) {
+        if (!this.location.equals(deliveryAddress)) return false; //needs to fly
+        this.payload.clear();
+        return true;
     }
 
 }
