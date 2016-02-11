@@ -39,12 +39,20 @@ public class Drone {
         return weight;
     }
 
-    public void load(ArrayList<Product> products) {
-        //load stuff in from warehouse
+    public boolean load(ArrayList<Product> products, Warehouse warehouse) {
+        if (!this.location.equals(warehouse.getLocation())) return false; //needs to fly
+        if (!warehouse.getStock().containsAll(products)) return false;
+        for (Iterator<Product> i = products.iterator(); i.hasNext();) {
+            if (this.getCurrentWeight() >= MAX_PAYLOAD) break;
+            Product p = i.next();
+            warehouse.getStock().remove(p);
+            this.payload.add(p);
+        }
+        return true;
     }
 
-    public void deliver() {
-        //drop stuff off at house
+    public void deliver(Point ) {
+        if (!this.location)
     }
 
 }
