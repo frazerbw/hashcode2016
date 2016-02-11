@@ -52,4 +52,8 @@ public class Point {
         System.out.println(p1.distBetween(p2)); //returns 3
     }
 
+    public String toString() {
+        return "X: " + getX() + " Y: " + getY();
+    }
+
 }
