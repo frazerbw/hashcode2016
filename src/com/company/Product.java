@@ -1,5 +1,10 @@
+package com.company;
+
+/**
+ * Created by tomas on 11/02/16.
+ */
 public class Product {
-	// Variable definition
+
     private int weight;
     private int ID;
 
@@ -11,7 +16,9 @@ public class Product {
     public int getWeight() {
         return weight;
     }
+
     public int getID() {
         return ID;
     }
+
 }

@@ -1,8 +1,12 @@
+package com.company;
+
 import java.util.ArrayList;
 
+/**
+ * Created by tomas on 11/02/16.
+ */
 public class Warehouse {
-	// Variables definition
-	private Point location;
+    private Point location;
     private ArrayList<Product> stock;
 
     public Warehouse(Point location, ArrayList<Product> stock) {
@@ -13,6 +17,7 @@ public class Warehouse {
     public Point getLocation() {
         return location;
     }
+
     public ArrayList<Product> getStock() {
         return stock;
     }

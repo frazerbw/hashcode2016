@@ -1,8 +1,13 @@
+package com.company;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+ * Created by tomas on 11/02/16.
+ */
 public class Drone {
-	// Variables definition
+
     private Point location;
     private int MAX_PAYLOAD;
     ArrayList<Product> payload;
@@ -12,15 +17,19 @@ public class Drone {
         this.MAX_PAYLOAD = MAX_PAYLOAD;
         this.payload = new ArrayList<Product>();
     }
-    // Get location
+
     public Point getLocation() {
         return location;
     }
-    // Get maximum payload
+
+    public void setLocation(Point location) {
+        this.location = location;
+    }
+
     public int getMAX_PAYLOAD() {
         return MAX_PAYLOAD;
     }
-    // Get current payload
+
     public int getCurrentWeight() {
         int weight = 0;
         for (Iterator<Product> i = payload.iterator(); i.hasNext();) {
@@ -45,7 +54,5 @@ public class Drone {
     public void deliver(Point point) {
         
     }
-    public void setLocation(Point location) {
-        this.location = location;
-    }
+
 }

@@ -1,8 +1,13 @@
+package com.company;
+
 import java.util.ArrayList;
 
+/**
+ * Created by frazer on 11/02/16.
+ */
 public class Pathfinder {
-	// Variables definition
-	private ArrayList<Point> points;
+
+    private ArrayList<Point> points;
     private Point starting;
     private Point destination;
 
@@ -42,4 +47,6 @@ public class Pathfinder {
         bestOrder.add(destination);
         return bestOrder;
     }
+
+
 }
