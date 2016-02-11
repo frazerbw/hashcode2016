@@ -19,4 +19,8 @@ public class Order {
     public Point getDeliveryAddress() {
         return deliveryAddress;
     }
+
+    public void setFulfilled() {
+        this.fulfilled = true;
+    }
 }
