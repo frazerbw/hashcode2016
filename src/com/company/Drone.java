@@ -51,8 +51,8 @@ public class Drone {
         return true;
     }
 
-    public void deliver(Point ) {
-        if (!this.location)
+    public void deliver(Point point) {
+        
     }
 
 }
